@@ -1,3 +1,17 @@
+register:
+    path: /register
+    controller: App\Controller\DefaultController::register
+    methods: POST
 #index:
 #    path: /
 #    controller: App\Controller\DefaultController::index
+api:
+    resource: '.'
+    type: 'api_platform'
+    prefix: '/' # Optional
+login_check:
+    path:     /login_check
+    methods:  [POST]
+#abc:
+#    path: /api/auth/user
+#    controller: App\Controller\DefaultController::api
